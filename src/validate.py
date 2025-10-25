@@ -1,62 +1,65 @@
-# src/validate.py
+import mlflow
 import joblib
 import pandas as pd
-from sklearn.metrics import mean_squared_error
-from sklearn.model_selection import train_test_split
-from sklearn.datasets import load_diabetes  # Importar load_diabetes
-import sys
+from sklearn.metrics import mean_squared_error, r2_score
 import os
 
-# Parámetro de umbral
-THRESHOLD = 5000.0  # Ajusta este umbral según el MSE esperado para load_diabetes
+print("🚀 Iniciando validación del modelo...")
 
-# --- Cargar el MISMO dataset que en train.py ---
-print("--- Debug: Cargando dataset load_diabetes ---")
-X, y = load_diabetes(return_X_y=True, as_frame=True)  # Usar as_frame=True si quieres DataFrames
+# === 1. Ruta al dataset ===
+data_path = os.path.join(os.path.dirname(__file__), '..', 'Historical Product Demand.csv')
+data = pd.read_csv(data_path)
+print(f"✅ Dataset cargado con {data.shape[0]} filas y {data.shape[1]} columnas.")
 
-# División de datos (usar los mismos datos que en entrenamiento no es ideal para validación real,
-# pero necesario aquí para que las dimensiones coincidan. Idealmente, tendrías un split dedicado
-# o usarías el X_test guardado del entrenamiento si fuera posible)
-# Para este ejemplo, simplemente re-dividimos para obtener un X_test con 10 features.
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)  # Añadir random_state para consistencia si es necesario
-print(f"--- Debug: Dimensiones de X_test: {X_test.shape} ---")  # Debería ser (n_samples, 10)
+# === 2. Limpieza avanzada (idéntica a train.py para coherencia) ===
+data.columns = data.columns.str.strip()
+data.dropna(inplace=True)
+data["Order_Demand"] = (
+    data["Order_Demand"]
+    .astype(str)
+    .str.replace('(', '-', regex=True)
+    .str.replace(')', '', regex=True)
+    .astype(float)
+)
+data = pd.get_dummies(data, drop_first=True)
+print(f"🧹 Dataset limpio con {data.shape[0]} filas y {data.shape[1]} columnas.")
 
-# --- Cargar modelo previamente entrenado ---
-model_filename = "model.pkl"
-model_path = os.path.abspath(os.path.join(os.getcwd(), model_filename))
-print(f"--- Debug: Intentando cargar modelo desde: {model_path} ---")
+# === 3. Variables ===
+if "Order_Demand" not in data.columns:
+    raise ValueError("❌ La columna 'Order_Demand' no existe en el dataset después de la limpieza.")
 
-try:
-    model = joblib.load(model_path)
-except FileNotFoundError:
-    print(f"--- ERROR: No se encontró el archivo del modelo en '{model_path}'. Asegúrate de que el paso 'make train' lo haya guardado correctamente en la raíz del proyecto. ---")
-    # Listar archivos en el directorio actual para depuración
-    print(f"--- Debug: Archivos en {os.getcwd()}: ---")
-    try:
-        print(os.listdir(os.getcwd()))
-    except Exception as list_err:
-        print(f"(No se pudo listar el directorio: {list_err})")
-    print("---")
-    sys.exit(1)  # Salir con error
+X = data.drop("Order_Demand", axis=1)
+y = data["Order_Demand"]
 
-# --- Predicción y Validación ---
-print("--- Debug: Realizando predicciones ---")
-try:
-    y_pred = model.predict(X_test)  # Ahora X_test tiene 10 features
-except ValueError as pred_err:
-    print(f"--- ERROR durante la predicción: {pred_err} ---")
-    # Imprimir información de características si el error persiste
-    print(f"Modelo esperaba {model.n_features_in_} features.")
-    print(f"X_test tiene {X_test.shape[1]} features.")
-    sys.exit(1)
+# === 4. Cargar modelo ===
+model_path = os.path.join(os.path.dirname(__file__), '..', 'model.pkl')
+if not os.path.exists(model_path):
+    raise FileNotFoundError(f"❌ No se encontró el modelo en {model_path}. Ejecuta primero train.py.")
 
-mse = mean_squared_error(y_test, y_pred)
-print(f"🔍 MSE del modelo: {mse:.4f} (umbral: {THRESHOLD})")
+model = joblib.load(model_path)
+print("✅ Modelo cargado correctamente.")
 
-# Validación
-if mse <= THRESHOLD:
-    print("✅ El modelo cumple los criterios de calidad.")
-    sys.exit(0)  # éxito
+# === 5. Evaluación ===
+y_pred = model.predict(X)
+mse = mean_squared_error(y, y_pred)
+r2 = r2_score(y, y_pred)
+
+print(f"📊 Resultados de validación:")
+print(f"   - MSE: {mse:.4f}")
+print(f"   - R²: {r2:.4f}")
+
+# === 6. Validación con umbral (control de calidad del modelo) ===
+THRESHOLD = 150000000.0
+if mse < THRESHOLD:
+    print("✅ El modelo cumple con el umbral esperado. Pipeline exitoso.")
 else:
-    print("❌ El modelo no cumple el umbral. Deteniendo pipeline.")
-    sys.exit(1)  # error
+    print("❌ El modelo no cumple con el umbral esperado. Deteniendo pipeline.")
+    exit(1)
+
+# === 7. Registrar validación en MLflow ===
+mlflow.set_experiment("MLOps_Historical_Product_Demand")
+with mlflow.start_run(run_name="validacion_modelo"):
+    mlflow.log_metric("mse_validation", mse)
+    mlflow.log_metric("r2_validation", r2)
+
+print("🎯 Validación completada y registrada en MLflow.")
