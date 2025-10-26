@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/USUARIO/Documents/GitHub/MLOps_Taller_4/mlruns/730798890984340917/62730ea5870d4cd7956fce69a2ad4541/artifacts
+end_time: 1761495794563
+entry_point_name: ''
+experiment_id: '730798890984340917'
+lifecycle_stage: active
+run_id: 62730ea5870d4cd7956fce69a2ad4541
+run_name: classy-auk-500
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761495780748
+status: 3
+tags: []
+user_id: USUARIO

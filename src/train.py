@@ -83,6 +83,10 @@ with mlflow.start_run():
     mlflow.log_param("max_depth", 10)
     mlflow.log_metric("mse", mse)
     mlflow.log_metric("r2", r2)
-    mlflow.sklearn.log_model(model, "model")
+
+    # Muestra de entrada para registrar la firma del modelo
+    input_example = X_test.iloc[:5]
+    mlflow.sklearn.log_model(model, name="model", input_example=input_example)
 
 print("--- ✅ Entrenamiento completado y modelo guardado exitosamente ---")
+

@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/USUARIO/Documents/GitHub/MLOps_Taller_4/mlruns/730798890984340917/models/m-b66c295a54654662bc024d86dff73d5b/artifacts
+creation_timestamp: 1761495780906
+experiment_id: '730798890984340917'
+last_updated_timestamp: 1761495794537
+model_id: m-b66c295a54654662bc024d86dff73d5b
+model_type: null
+name: model
+source_run_id: 62730ea5870d4cd7956fce69a2ad4541
+status: 2
+status_message: null

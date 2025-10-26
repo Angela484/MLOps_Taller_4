@@ -1,0 +1,1992 @@
+artifact_path: file:///C:/Users/USUARIO/Documents/GitHub/MLOps_Taller_4/mlruns/730798890984340917/models/m-b66c295a54654662bc024d86dff73d5b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+is_signature_from_type_hint: false
+mlflow_version: 3.4.0
+model_id: m-b66c295a54654662bc024d86dff73d5b
+model_size_bytes: 1131200
+model_uuid: m-b66c295a54654662bc024d86dff73d5b
+prompts: null
+run_id: 62730ea5870d4cd7956fce69a2ad4541
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "boolean", "name": "Product_Code_Product_0002", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0003", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0004", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0005", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0007", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0008",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0010", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0011", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0012", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0013", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0014", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0016", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0017",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0018", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0019", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0020", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0021", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0022", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0023", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0024",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0025", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0026", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0027", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0028", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0029", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0030", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0031",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0032", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0033", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0034", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0035", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0036", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0037", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0040",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0041", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0042", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0043", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0046", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0047", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0049", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0050",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0051", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0052", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0053", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0054", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0055", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0056", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0057",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0058", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0059", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0060", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0061", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0062", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0063", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0064",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0065", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0066", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0067", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0068", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0069", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0070", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0071",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0074", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0075", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0077", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0078", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0079", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0080", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0081",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0082", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0083", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0084", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0085", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0086", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0087", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0088",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0089", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0090", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0091", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0093", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0094", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0095", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0097",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0098", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0099", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0100", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0101", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0102", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0103", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0104",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0106", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0107", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0109", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0110", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0111", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0113", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0115",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0117", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0118", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0120", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0121", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0122", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0123", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0124",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0125", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0127", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0129", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0130", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0131", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0132", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0133",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0134", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0135", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0136", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0137", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0138", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0139", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0140",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0141", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0143", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0146", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0147", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0148", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0149", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0150",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0151", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0152", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0153", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0154", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0155", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0157", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0158",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0159", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0160", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0161", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0163", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0164", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0166", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0167",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0168", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0169", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0170", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0171", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0172", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0173", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0174",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0176", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0177", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0178", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0179", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0180", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0181", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0182",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0183", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0185", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0186", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0187", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0188", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0189", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0190",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0191", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0192", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0193", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0194", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0195", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0197", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0200",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0201", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0202", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0204", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0205", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0206", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0208", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0209",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0210", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0211", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0213", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0214", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0215", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0216", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0217",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0218", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0219", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0220", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0221", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0223", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0224", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0225",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0226", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0227", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0228", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0229", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0230", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0231", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0232",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0248", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0249", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0250", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0251", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0253", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0255", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0256",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0257", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0258", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0261", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0262", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0263", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0264", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0266",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0268", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0269", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0270", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0271", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0272", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0273", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0275",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0276", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0280", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0281", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0283", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0284", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0286", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0287",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0288", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0289", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0290", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0292", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0293", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0294", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0296",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0297", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0299", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0300", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0301", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0302", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0303", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0304",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0305", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0306", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0307", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0308", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0309", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0311", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0312",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0313", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0315", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0316", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0317", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0318", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0321", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0322",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0323", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0325", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0327", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0329", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0331", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0332", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0333",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0334", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0335", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0336", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0337", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0338", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0341", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0342",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0344", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0345", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0347", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0348", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0349", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0350", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0351",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0352", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0353", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0354", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0355", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0356", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0357", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0358",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0361", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0363", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0364", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0365", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0367", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0368", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0373",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0374", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0376", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0378", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0379", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0380", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0383", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0384",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0385", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0387", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0389", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0390", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0391", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0392", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0394",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0395", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0397", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0399", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0400", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0401", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0404", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0405",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0406", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0407", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0408", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0409", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0410", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0411", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0412",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0413", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0415", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0417", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0418", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0419", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0420", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0422",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0423", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0424", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0425", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0427", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0430", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0431", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0432",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0433", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0435", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0441", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0442", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0443", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0444", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0445",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0447", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0449", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0453", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0454", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0455", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0458", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0459",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0460", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0461", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0463", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0464", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0468", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0469", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0470",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0471", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0472", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0473", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0474", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0476", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0477", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0478",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0479", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0482", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0485", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0486", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0487", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0489", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0490",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0491", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0493", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0494", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0495", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0496", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0497", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0499",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0501", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0502", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0503", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0504", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0505", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0507", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0508",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0512", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0513", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0514", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0515", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0516", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0517", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0519",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0520", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0521", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0522", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0524", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0525", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0527", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0529",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0530", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0531", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0533", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0534", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0535", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0536", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0538",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0539", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0541", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0543", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0544", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0545", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0546", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0547",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0548", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0552", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0555", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0556", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0558", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0560", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0564",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0565", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0566", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0582", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0583", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0584", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0585", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0586",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0587", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0588", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0589", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0590", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0592", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0593", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0597",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0603", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0605", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0606", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0607", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0608", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0609", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0613",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0614", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0615", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0616", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0617", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0618", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0619", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0620",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0621", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0622", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0623", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0625", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0626", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0627", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0628",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0631", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0632", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0634", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0635", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0637", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0639", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0640",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0642", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0643", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0648", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0649", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0650", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0652", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0654",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0655", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0656", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0657", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0658", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0659", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0660", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0662",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0664", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0665", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0666", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0667", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0668", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0669", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0670",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0671", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0672", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0675", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0677", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0679", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0681", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0682",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0683", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0684", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0685", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0686", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0689", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0694", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0695",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0700", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0701", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0702", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0703", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0704", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0705", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0706",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0707", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0708", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0709", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0710", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0711", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0712", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0713",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0714", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0715", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0716", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0718", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0719", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0720", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0721",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0722", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0723", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0724", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0726", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0728", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0729", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0730",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0731", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0732", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0733", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0735", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0736", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0737", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0738",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0739", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0740", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0741", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0743", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0744", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0745", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0746",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0747", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0748", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0749", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0754", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0755", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0756", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0757",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0758", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0759", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0760", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0761", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0762", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0763", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0764",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0765", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0767", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0768", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0769", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0770", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0771", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0775",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0776", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0779", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0780", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0781", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0783", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0784", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0785",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0786", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0789", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0790", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0791", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0792", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0793", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0795",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0796", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0797", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0798", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0801", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0802", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0803", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0806",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0809", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0810", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0814", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0815", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0816", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0817", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0818",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0819", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0820", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0821", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0822", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0823", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0825", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0826",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0827", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0831", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0832", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0833", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0837", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0839", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0841",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0842", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0843", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0845", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0847", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0861", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0862", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0863",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0864", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0866", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0867", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0868", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0872", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0877", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0879",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0880", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0881", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0883", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0890", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0891", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0892", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0894",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0901", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0903", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0904", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0905", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0907", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0908", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0909",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0913", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0916", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0919", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0920", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0923", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0924", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0928",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0929", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0930", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0931", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0932", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0933", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0935", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0936",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0937", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0938", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0939", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0940", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0941", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0942", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0943",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0945", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0947", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0950", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0951", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0952", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0954", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0955",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0956", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0957", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0958", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0960", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0961", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0963", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0964",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0965", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0966", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0967", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0968", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0970", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0971", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0973",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0974", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0975", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0976", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0977", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0979", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0980", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0981",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0982", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0984", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0985", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0986", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0987", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0988", "required": true}, {"type": "boolean", "name": "Product_Code_Product_0989",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_0991", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_0993", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_0995", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_0996", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_0997", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_0998", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1000",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1001", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1002", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1003", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1004", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1005", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1006", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1007",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1008", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1009", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1010", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1011", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1012", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1014", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1015",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1016", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1017", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1018", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1020", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1021", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1022", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1023",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1024", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1025", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1027", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1028", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1029", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1030", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1031",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1033", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1034", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1035", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1038", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1039", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1040", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1041",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1043", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1044", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1045", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1047", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1049", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1050", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1051",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1052", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1053", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1054", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1056", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1057", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1058", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1059",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1062", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1063", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1064", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1065", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1066", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1067", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1068",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1069", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1072", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1073", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1075", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1076", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1077", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1078",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1079", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1080", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1082", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1087", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1089", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1093", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1094",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1096", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1100", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1101", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1102", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1103", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1104", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1106",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1107", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1108", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1110", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1111", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1112", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1114", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1115",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1116", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1118", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1120", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1122", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1124", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1125", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1126",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1127", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1129", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1134", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1135", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1136", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1138", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1139",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1140", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1141", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1143", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1144", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1146", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1149", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1150",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1151", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1152", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1153", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1154", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1155", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1156", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1157",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1158", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1159", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1162", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1163", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1165", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1166", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1168",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1169", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1173", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1174", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1175", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1176", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1177", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1178",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1180", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1181", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1182", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1183", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1184", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1186", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1188",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1191", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1193", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1194", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1195", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1196", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1197", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1198",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1199", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1200", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1201", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1202", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1203", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1204", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1205",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1206", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1208", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1209", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1210", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1212", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1213", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1216",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1217", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1218", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1219", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1220", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1222", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1224", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1225",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1226", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1227", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1228", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1229", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1230", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1231", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1232",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1233", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1234", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1236", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1237", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1239", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1240", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1241",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1242", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1243", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1244", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1245", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1246", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1247", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1248",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1249", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1250", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1251", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1252", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1253", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1254", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1255",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1256", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1257", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1258", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1259", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1260", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1262", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1263",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1264", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1265", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1266", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1267", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1269", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1270", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1271",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1272", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1273", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1274", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1275", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1276", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1278", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1279",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1280", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1281", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1282", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1283", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1284", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1286", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1287",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1288", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1289", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1290", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1291", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1292", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1293", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1294",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1295", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1296", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1297", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1298", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1299", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1300", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1301",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1303", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1304", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1305", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1306", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1307", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1308", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1309",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1310", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1311", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1312", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1313", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1314", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1315", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1316",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1331", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1341", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1342", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1343", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1344", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1345", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1346",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1348", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1349", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1350", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1351", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1352", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1353", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1354",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1355", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1356", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1357", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1359", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1360", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1361", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1362",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1363", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1364", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1365", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1367", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1368", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1369", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1370",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1371", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1372", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1374", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1375", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1377", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1378", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1379",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1380", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1381", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1382", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1383", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1384", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1385", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1386",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1387", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1388", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1389", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1391", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1392", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1393", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1394",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1395", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1396", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1397", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1398", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1399", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1400", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1401",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1402", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1403", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1404", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1407", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1408", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1409", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1410",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1413", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1415", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1416", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1417", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1418", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1419", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1420",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1421", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1422", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1423", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1424", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1425", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1426", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1427",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1428", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1429", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1430", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1431", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1432", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1433", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1434",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1435", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1436", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1437", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1438", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1439", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1440", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1441",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1442", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1443", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1444", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1445", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1446", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1447", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1448",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1450", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1451", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1452", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1453", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1454", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1455", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1456",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1457", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1458", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1459", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1460", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1461", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1463", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1464",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1465", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1466", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1467", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1468", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1469", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1470", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1473",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1474", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1475", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1476", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1477", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1478", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1479", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1480",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1481", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1482", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1484", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1485", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1486", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1490", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1491",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1492", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1493", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1494", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1495", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1496", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1499", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1500",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1501", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1502", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1504", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1505", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1507", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1508", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1509",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1510", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1511", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1512", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1513", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1515", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1517", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1518",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1519", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1520", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1521", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1522", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1526", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1527", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1528",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1529", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1530", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1531", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1532", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1533", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1534", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1535",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1536", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1538", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1539", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1540", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1541", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1542", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1543",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1544", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1546", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1547", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1548", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1550", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1552", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1553",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1554", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1555", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1556", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1557", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1559", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1560", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1562",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1563", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1564", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1565", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1566", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1567", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1569", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1570",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1571", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1572", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1573", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1574", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1576", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1577", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1578",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1579", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1580", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1581", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1582", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1588", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1589", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1590",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1593", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1594", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1596", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1599", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1600", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1601", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1608",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1609", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1610", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1612", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1616", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1617", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1618", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1620",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1621", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1622", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1623", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1624", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1626", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1629", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1630",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1631", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1633", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1635", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1636", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1637", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1638", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1639",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1640", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1641", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1643", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1644", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1645", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1646", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1647",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1648", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1649", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1651", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1653", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1656", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1657", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1658",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1659", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1660", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1661", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1663", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1665", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1666", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1667",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1668", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1669", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1670", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1671", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1672", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1673", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1674",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1675", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1676", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1677", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1678", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1679", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1680", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1682",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1683", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1684", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1685", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1686", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1687", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1688", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1689",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1692", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1693", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1696", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1699", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1700", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1702", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1705",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1706", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1708", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1710", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1712", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1713", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1715", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1716",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1718", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1719", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1722", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1723", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1724", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1727", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1728",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1729", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1731", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1733", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1734", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1736", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1737", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1739",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1740", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1741", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1742", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1744", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1748", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1749", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1751",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1752", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1754", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1755", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1757", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1758", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1759", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1760",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1761", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1762", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1763", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1764", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1765", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1766", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1767",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1768", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1769", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1770", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1771", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1773", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1774", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1776",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1777", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1778", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1783", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1786", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1787", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1789", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1792",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1794", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1795", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1796", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1797", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1798", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1802", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1803",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1805", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1806", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1807", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1809", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1812", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1813", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1814",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1815", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1816", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1817", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1819", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1820", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1822", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1823",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1824", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1825", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1826", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1828", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1831", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1832", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1833",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1834", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1835", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1836", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1837", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1839", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1840", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1841",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1843", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1844", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1846", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1847", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1851", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1852", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1853",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1856", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1858", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1859", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1862", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1864", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1865", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1866",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1867", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1868", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1869", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1870", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1871", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1872", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1874",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1875", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1878", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1879", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1880", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1882", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1883", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1884",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1885", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1886", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1889", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1891", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1892", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1893", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1894",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1895", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1896", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1898", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1899", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1901", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1903", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1904",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1905", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1906", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1908", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1909", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1918", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1920", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1921",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1922", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1924", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1926", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1927", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1929", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1930", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1931",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1932", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1935", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1937", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1938", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1939", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1940", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1941",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1942", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1943", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1945", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1947", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1948", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1949", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1952",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1954", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1956", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1957", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1958", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1959", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1960", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1962",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1963", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1964", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1966", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1967", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1969", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1970", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1971",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1972", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1973", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1975", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1977", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1979", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1980", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1981",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1983", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1984", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1985", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1986", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1987", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1988", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1991",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_1992", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_1993", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_1994", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_1995", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_1996", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_1997", "required": true}, {"type": "boolean", "name": "Product_Code_Product_1999",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2000", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2001", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2002", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2003", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2004", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2006", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2008",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2010", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2011", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2013", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2014", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2015", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2017", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2018",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2019", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2021", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2023", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2025", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2027", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2028", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2029",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2031", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2033", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2035", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2036", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2037", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2038", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2039",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2043", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2044", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2046", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2047", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2051", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2053", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2054",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2055", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2056", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2057", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2072", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2076", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2081", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2082",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2083", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2089", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2094", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2104", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2105", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2107", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2109",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2110", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2112", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2114", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2115", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2118", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2120", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2122",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2123", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2124", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2125", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2126", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2128", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2129", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2130",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2131", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2132", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2133", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2135", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2136", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2137", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2138",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2139", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2140", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2141", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2142", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2143", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2144", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2145",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2146", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2148", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2156", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2157", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2158", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2163", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2164",
+    "required": true}, {"type": "boolean", "name": "Product_Code_Product_2165", "required":
+    true}, {"type": "boolean", "name": "Product_Code_Product_2166", "required": true},
+    {"type": "boolean", "name": "Product_Code_Product_2167", "required": true}, {"type":
+    "boolean", "name": "Product_Code_Product_2168", "required": true}, {"type": "boolean",
+    "name": "Product_Code_Product_2169", "required": true}, {"type": "boolean", "name":
+    "Product_Code_Product_2170", "required": true}, {"type": "boolean", "name": "Product_Code_Product_2171",
+    "required": true}, {"type": "boolean", "name": "Warehouse_Whse_C", "required":
+    true}, {"type": "boolean", "name": "Warehouse_Whse_J", "required": true}, {"type":
+    "boolean", "name": "Warehouse_Whse_S", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_002", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_003", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_004", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_005", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_006", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_007", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_008", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_009", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_010", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_011", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_012", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_013", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_015", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_017", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_018", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_019", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_020", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_021", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_022", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_023", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_024", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_026", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_028", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_029", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_030", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_031", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_032", "required": true}, {"type": "boolean",
+    "name": "Product_Category_Category_033", "required": true}, {"type": "boolean",
+    "name": "Date_2011/11/29", "required": true}, {"type": "boolean", "name": "Date_2011/12/16",
+    "required": true}, {"type": "boolean", "name": "Date_2011/12/19", "required":
+    true}, {"type": "boolean", "name": "Date_2011/12/26", "required": true}, {"type":
+    "boolean", "name": "Date_2011/12/29", "required": true}, {"type": "boolean", "name":
+    "Date_2011/12/30", "required": true}, {"type": "boolean", "name": "Date_2011/12/7",
+    "required": true}, {"type": "boolean", "name": "Date_2011/12/9", "required": true},
+    {"type": "boolean", "name": "Date_2012/1/10", "required": true}, {"type": "boolean",
+    "name": "Date_2012/1/11", "required": true}, {"type": "boolean", "name": "Date_2012/1/12",
+    "required": true}, {"type": "boolean", "name": "Date_2012/1/13", "required": true},
+    {"type": "boolean", "name": "Date_2012/1/16", "required": true}, {"type": "boolean",
+    "name": "Date_2012/1/17", "required": true}, {"type": "boolean", "name": "Date_2012/1/18",
+    "required": true}, {"type": "boolean", "name": "Date_2012/1/19", "required": true},
+    {"type": "boolean", "name": "Date_2012/1/20", "required": true}, {"type": "boolean",
+    "name": "Date_2012/1/23", "required": true}, {"type": "boolean", "name": "Date_2012/1/24",
+    "required": true}, {"type": "boolean", "name": "Date_2012/1/25", "required": true},
+    {"type": "boolean", "name": "Date_2012/1/26", "required": true}, {"type": "boolean",
+    "name": "Date_2012/1/27", "required": true}, {"type": "boolean", "name": "Date_2012/1/29",
+    "required": true}, {"type": "boolean", "name": "Date_2012/1/3", "required": true},
+    {"type": "boolean", "name": "Date_2012/1/30", "required": true}, {"type": "boolean",
+    "name": "Date_2012/1/31", "required": true}, {"type": "boolean", "name": "Date_2012/1/4",
+    "required": true}, {"type": "boolean", "name": "Date_2012/1/5", "required": true},
+    {"type": "boolean", "name": "Date_2012/1/6", "required": true}, {"type": "boolean",
+    "name": "Date_2012/1/9", "required": true}, {"type": "boolean", "name": "Date_2012/10/1",
+    "required": true}, {"type": "boolean", "name": "Date_2012/10/10", "required":
+    true}, {"type": "boolean", "name": "Date_2012/10/11", "required": true}, {"type":
+    "boolean", "name": "Date_2012/10/12", "required": true}, {"type": "boolean", "name":
+    "Date_2012/10/14", "required": true}, {"type": "boolean", "name": "Date_2012/10/15",
+    "required": true}, {"type": "boolean", "name": "Date_2012/10/16", "required":
+    true}, {"type": "boolean", "name": "Date_2012/10/17", "required": true}, {"type":
+    "boolean", "name": "Date_2012/10/18", "required": true}, {"type": "boolean", "name":
+    "Date_2012/10/19", "required": true}, {"type": "boolean", "name": "Date_2012/10/2",
+    "required": true}, {"type": "boolean", "name": "Date_2012/10/22", "required":
+    true}, {"type": "boolean", "name": "Date_2012/10/23", "required": true}, {"type":
+    "boolean", "name": "Date_2012/10/24", "required": true}, {"type": "boolean", "name":
+    "Date_2012/10/25", "required": true}, {"type": "boolean", "name": "Date_2012/10/26",
+    "required": true}, {"type": "boolean", "name": "Date_2012/10/29", "required":
+    true}, {"type": "boolean", "name": "Date_2012/10/3", "required": true}, {"type":
+    "boolean", "name": "Date_2012/10/30", "required": true}, {"type": "boolean", "name":
+    "Date_2012/10/31", "required": true}, {"type": "boolean", "name": "Date_2012/10/4",
+    "required": true}, {"type": "boolean", "name": "Date_2012/10/5", "required": true},
+    {"type": "boolean", "name": "Date_2012/10/8", "required": true}, {"type": "boolean",
+    "name": "Date_2012/10/9", "required": true}, {"type": "boolean", "name": "Date_2012/11/1",
+    "required": true}, {"type": "boolean", "name": "Date_2012/11/11", "required":
+    true}, {"type": "boolean", "name": "Date_2012/11/12", "required": true}, {"type":
+    "boolean", "name": "Date_2012/11/13", "required": true}, {"type": "boolean", "name":
+    "Date_2012/11/14", "required": true}, {"type": "boolean", "name": "Date_2012/11/15",
+    "required": true}, {"type": "boolean", "name": "Date_2012/11/16", "required":
+    true}, {"type": "boolean", "name": "Date_2012/11/19", "required": true}, {"type":
+    "boolean", "name": "Date_2012/11/2", "required": true}, {"type": "boolean", "name":
+    "Date_2012/11/20", "required": true}, {"type": "boolean", "name": "Date_2012/11/21",
+    "required": true}, {"type": "boolean", "name": "Date_2012/11/22", "required":
+    true}, {"type": "boolean", "name": "Date_2012/11/23", "required": true}, {"type":
+    "boolean", "name": "Date_2012/11/25", "required": true}, {"type": "boolean", "name":
+    "Date_2012/11/26", "required": true}, {"type": "boolean", "name": "Date_2012/11/27",
+    "required": true}, {"type": "boolean", "name": "Date_2012/11/28", "required":
+    true}, {"type": "boolean", "name": "Date_2012/11/29", "required": true}, {"type":
+    "boolean", "name": "Date_2012/11/30", "required": true}, {"type": "boolean", "name":
+    "Date_2012/11/4", "required": true}, {"type": "boolean", "name": "Date_2012/11/5",
+    "required": true}, {"type": "boolean", "name": "Date_2012/11/6", "required": true},
+    {"type": "boolean", "name": "Date_2012/11/7", "required": true}, {"type": "boolean",
+    "name": "Date_2012/11/8", "required": true}, {"type": "boolean", "name": "Date_2012/11/9",
+    "required": true}, {"type": "boolean", "name": "Date_2012/12/10", "required":
+    true}, {"type": "boolean", "name": "Date_2012/12/11", "required": true}, {"type":
+    "boolean", "name": "Date_2012/12/12", "required": true}, {"type": "boolean", "name":
+    "Date_2012/12/13", "required": true}, {"type": "boolean", "name": "Date_2012/12/14",
+    "required": true}, {"type": "boolean", "name": "Date_2012/12/17", "required":
+    true}, {"type": "boolean", "name": "Date_2012/12/18", "required": true}, {"type":
+    "boolean", "name": "Date_2012/12/19", "required": true}, {"type": "boolean", "name":
+    "Date_2012/12/2", "required": true}, {"type": "boolean", "name": "Date_2012/12/20",
+    "required": true}, {"type": "boolean", "name": "Date_2012/12/21", "required":
+    true}, {"type": "boolean", "name": "Date_2012/12/24", "required": true}, {"type":
+    "boolean", "name": "Date_2012/12/25", "required": true}, {"type": "boolean", "name":
+    "Date_2012/12/26", "required": true}, {"type": "boolean", "name": "Date_2012/12/27",
+    "required": true}, {"type": "boolean", "name": "Date_2012/12/28", "required":
+    true}, {"type": "boolean", "name": "Date_2012/12/3", "required": true}, {"type":
+    "boolean", "name": "Date_2012/12/31", "required": true}, {"type": "boolean", "name":
+    "Date_2012/12/4", "required": true}, {"type": "boolean", "name": "Date_2012/12/5",
+    "required": true}, {"type": "boolean", "name": "Date_2012/12/6", "required": true},
+    {"type": "boolean", "name": "Date_2012/12/7", "required": true}, {"type": "boolean",
+    "name": "Date_2012/2/1", "required": true}, {"type": "boolean", "name": "Date_2012/2/10",
+    "required": true}, {"type": "boolean", "name": "Date_2012/2/12", "required": true},
+    {"type": "boolean", "name": "Date_2012/2/13", "required": true}, {"type": "boolean",
+    "name": "Date_2012/2/14", "required": true}, {"type": "boolean", "name": "Date_2012/2/15",
+    "required": true}, {"type": "boolean", "name": "Date_2012/2/16", "required": true},
+    {"type": "boolean", "name": "Date_2012/2/17", "required": true}, {"type": "boolean",
+    "name": "Date_2012/2/19", "required": true}, {"type": "boolean", "name": "Date_2012/2/2",
+    "required": true}, {"type": "boolean", "name": "Date_2012/2/20", "required": true},
+    {"type": "boolean", "name": "Date_2012/2/21", "required": true}, {"type": "boolean",
+    "name": "Date_2012/2/22", "required": true}, {"type": "boolean", "name": "Date_2012/2/23",
+    "required": true}, {"type": "boolean", "name": "Date_2012/2/24", "required": true},
+    {"type": "boolean", "name": "Date_2012/2/26", "required": true}, {"type": "boolean",
+    "name": "Date_2012/2/27", "required": true}, {"type": "boolean", "name": "Date_2012/2/28",
+    "required": true}, {"type": "boolean", "name": "Date_2012/2/29", "required": true},
+    {"type": "boolean", "name": "Date_2012/2/3", "required": true}, {"type": "boolean",
+    "name": "Date_2012/2/5", "required": true}, {"type": "boolean", "name": "Date_2012/2/6",
+    "required": true}, {"type": "boolean", "name": "Date_2012/2/7", "required": true},
+    {"type": "boolean", "name": "Date_2012/2/8", "required": true}, {"type": "boolean",
+    "name": "Date_2012/2/9", "required": true}, {"type": "boolean", "name": "Date_2012/3/1",
+    "required": true}, {"type": "boolean", "name": "Date_2012/3/11", "required": true},
+    {"type": "boolean", "name": "Date_2012/3/12", "required": true}, {"type": "boolean",
+    "name": "Date_2012/3/13", "required": true}, {"type": "boolean", "name": "Date_2012/3/14",
+    "required": true}, {"type": "boolean", "name": "Date_2012/3/15", "required": true},
+    {"type": "boolean", "name": "Date_2012/3/16", "required": true}, {"type": "boolean",
+    "name": "Date_2012/3/18", "required": true}, {"type": "boolean", "name": "Date_2012/3/19",
+    "required": true}, {"type": "boolean", "name": "Date_2012/3/2", "required": true},
+    {"type": "boolean", "name": "Date_2012/3/20", "required": true}, {"type": "boolean",
+    "name": "Date_2012/3/21", "required": true}, {"type": "boolean", "name": "Date_2012/3/22",
+    "required": true}, {"type": "boolean", "name": "Date_2012/3/23", "required": true},
+    {"type": "boolean", "name": "Date_2012/3/25", "required": true}, {"type": "boolean",
+    "name": "Date_2012/3/26", "required": true}, {"type": "boolean", "name": "Date_2012/3/27",
+    "required": true}, {"type": "boolean", "name": "Date_2012/3/28", "required": true},
+    {"type": "boolean", "name": "Date_2012/3/29", "required": true}, {"type": "boolean",
+    "name": "Date_2012/3/30", "required": true}, {"type": "boolean", "name": "Date_2012/3/4",
+    "required": true}, {"type": "boolean", "name": "Date_2012/3/5", "required": true},
+    {"type": "boolean", "name": "Date_2012/3/6", "required": true}, {"type": "boolean",
+    "name": "Date_2012/3/7", "required": true}, {"type": "boolean", "name": "Date_2012/3/8",
+    "required": true}, {"type": "boolean", "name": "Date_2012/3/9", "required": true},
+    {"type": "boolean", "name": "Date_2012/4/1", "required": true}, {"type": "boolean",
+    "name": "Date_2012/4/10", "required": true}, {"type": "boolean", "name": "Date_2012/4/11",
+    "required": true}, {"type": "boolean", "name": "Date_2012/4/12", "required": true},
+    {"type": "boolean", "name": "Date_2012/4/13", "required": true}, {"type": "boolean",
+    "name": "Date_2012/4/15", "required": true}, {"type": "boolean", "name": "Date_2012/4/16",
+    "required": true}, {"type": "boolean", "name": "Date_2012/4/17", "required": true},
+    {"type": "boolean", "name": "Date_2012/4/18", "required": true}, {"type": "boolean",
+    "name": "Date_2012/4/19", "required": true}, {"type": "boolean", "name": "Date_2012/4/2",
+    "required": true}, {"type": "boolean", "name": "Date_2012/4/20", "required": true},
+    {"type": "boolean", "name": "Date_2012/4/22", "required": true}, {"type": "boolean",
+    "name": "Date_2012/4/23", "required": true}, {"type": "boolean", "name": "Date_2012/4/24",
+    "required": true}, {"type": "boolean", "name": "Date_2012/4/25", "required": true},
+    {"type": "boolean", "name": "Date_2012/4/26", "required": true}, {"type": "boolean",
+    "name": "Date_2012/4/27", "required": true}, {"type": "boolean", "name": "Date_2012/4/3",
+    "required": true}, {"type": "boolean", "name": "Date_2012/4/30", "required": true},
+    {"type": "boolean", "name": "Date_2012/4/4", "required": true}, {"type": "boolean",
+    "name": "Date_2012/4/5", "required": true}, {"type": "boolean", "name": "Date_2012/4/6",
+    "required": true}, {"type": "boolean", "name": "Date_2012/4/8", "required": true},
+    {"type": "boolean", "name": "Date_2012/4/9", "required": true}, {"type": "boolean",
+    "name": "Date_2012/5/1", "required": true}, {"type": "boolean", "name": "Date_2012/5/10",
+    "required": true}, {"type": "boolean", "name": "Date_2012/5/11", "required": true},
+    {"type": "boolean", "name": "Date_2012/5/14", "required": true}, {"type": "boolean",
+    "name": "Date_2012/5/15", "required": true}, {"type": "boolean", "name": "Date_2012/5/16",
+    "required": true}, {"type": "boolean", "name": "Date_2012/5/17", "required": true},
+    {"type": "boolean", "name": "Date_2012/5/18", "required": true}, {"type": "boolean",
+    "name": "Date_2012/5/2", "required": true}, {"type": "boolean", "name": "Date_2012/5/20",
+    "required": true}, {"type": "boolean", "name": "Date_2012/5/21", "required": true},
+    {"type": "boolean", "name": "Date_2012/5/22", "required": true}, {"type": "boolean",
+    "name": "Date_2012/5/23", "required": true}, {"type": "boolean", "name": "Date_2012/5/24",
+    "required": true}, {"type": "boolean", "name": "Date_2012/5/25", "required": true},
+    {"type": "boolean", "name": "Date_2012/5/27", "required": true}, {"type": "boolean",
+    "name": "Date_2012/5/28", "required": true}, {"type": "boolean", "name": "Date_2012/5/29",
+    "required": true}, {"type": "boolean", "name": "Date_2012/5/3", "required": true},
+    {"type": "boolean", "name": "Date_2012/5/30", "required": true}, {"type": "boolean",
+    "name": "Date_2012/5/31", "required": true}, {"type": "boolean", "name": "Date_2012/5/4",
+    "required": true}, {"type": "boolean", "name": "Date_2012/5/5", "required": true},
+    {"type": "boolean", "name": "Date_2012/5/6", "required": true}, {"type": "boolean",
+    "name": "Date_2012/5/7", "required": true}, {"type": "boolean", "name": "Date_2012/5/8",
+    "required": true}, {"type": "boolean", "name": "Date_2012/5/9", "required": true},
+    {"type": "boolean", "name": "Date_2012/6/1", "required": true}, {"type": "boolean",
+    "name": "Date_2012/6/11", "required": true}, {"type": "boolean", "name": "Date_2012/6/12",
+    "required": true}, {"type": "boolean", "name": "Date_2012/6/13", "required": true},
+    {"type": "boolean", "name": "Date_2012/6/14", "required": true}, {"type": "boolean",
+    "name": "Date_2012/6/15", "required": true}, {"type": "boolean", "name": "Date_2012/6/18",
+    "required": true}, {"type": "boolean", "name": "Date_2012/6/19", "required": true},
+    {"type": "boolean", "name": "Date_2012/6/20", "required": true}, {"type": "boolean",
+    "name": "Date_2012/6/21", "required": true}, {"type": "boolean", "name": "Date_2012/6/22",
+    "required": true}, {"type": "boolean", "name": "Date_2012/6/24", "required": true},
+    {"type": "boolean", "name": "Date_2012/6/25", "required": true}, {"type": "boolean",
+    "name": "Date_2012/6/26", "required": true}, {"type": "boolean", "name": "Date_2012/6/27",
+    "required": true}, {"type": "boolean", "name": "Date_2012/6/28", "required": true},
+    {"type": "boolean", "name": "Date_2012/6/29", "required": true}, {"type": "boolean",
+    "name": "Date_2012/6/4", "required": true}, {"type": "boolean", "name": "Date_2012/6/5",
+    "required": true}, {"type": "boolean", "name": "Date_2012/6/6", "required": true},
+    {"type": "boolean", "name": "Date_2012/6/7", "required": true}, {"type": "boolean",
+    "name": "Date_2012/6/8", "required": true}, {"type": "boolean", "name": "Date_2012/7/10",
+    "required": true}, {"type": "boolean", "name": "Date_2012/7/11", "required": true},
+    {"type": "boolean", "name": "Date_2012/7/12", "required": true}, {"type": "boolean",
+    "name": "Date_2012/7/13", "required": true}, {"type": "boolean", "name": "Date_2012/7/16",
+    "required": true}, {"type": "boolean", "name": "Date_2012/7/17", "required": true},
+    {"type": "boolean", "name": "Date_2012/7/18", "required": true}, {"type": "boolean",
+    "name": "Date_2012/7/19", "required": true}, {"type": "boolean", "name": "Date_2012/7/2",
+    "required": true}, {"type": "boolean", "name": "Date_2012/7/20", "required": true},
+    {"type": "boolean", "name": "Date_2012/7/23", "required": true}, {"type": "boolean",
+    "name": "Date_2012/7/24", "required": true}, {"type": "boolean", "name": "Date_2012/7/25",
+    "required": true}, {"type": "boolean", "name": "Date_2012/7/26", "required": true},
+    {"type": "boolean", "name": "Date_2012/7/27", "required": true}, {"type": "boolean",
+    "name": "Date_2012/7/29", "required": true}, {"type": "boolean", "name": "Date_2012/7/3",
+    "required": true}, {"type": "boolean", "name": "Date_2012/7/30", "required": true},
+    {"type": "boolean", "name": "Date_2012/7/31", "required": true}, {"type": "boolean",
+    "name": "Date_2012/7/4", "required": true}, {"type": "boolean", "name": "Date_2012/7/5",
+    "required": true}, {"type": "boolean", "name": "Date_2012/7/6", "required": true},
+    {"type": "boolean", "name": "Date_2012/7/9", "required": true}, {"type": "boolean",
+    "name": "Date_2012/8/1", "required": true}, {"type": "boolean", "name": "Date_2012/8/10",
+    "required": true}, {"type": "boolean", "name": "Date_2012/8/13", "required": true},
+    {"type": "boolean", "name": "Date_2012/8/14", "required": true}, {"type": "boolean",
+    "name": "Date_2012/8/15", "required": true}, {"type": "boolean", "name": "Date_2012/8/16",
+    "required": true}, {"type": "boolean", "name": "Date_2012/8/17", "required": true},
+    {"type": "boolean", "name": "Date_2012/8/2", "required": true}, {"type": "boolean",
+    "name": "Date_2012/8/20", "required": true}, {"type": "boolean", "name": "Date_2012/8/21",
+    "required": true}, {"type": "boolean", "name": "Date_2012/8/22", "required": true},
+    {"type": "boolean", "name": "Date_2012/8/23", "required": true}, {"type": "boolean",
+    "name": "Date_2012/8/24", "required": true}, {"type": "boolean", "name": "Date_2012/8/26",
+    "required": true}, {"type": "boolean", "name": "Date_2012/8/27", "required": true},
+    {"type": "boolean", "name": "Date_2012/8/28", "required": true}, {"type": "boolean",
+    "name": "Date_2012/8/29", "required": true}, {"type": "boolean", "name": "Date_2012/8/3",
+    "required": true}, {"type": "boolean", "name": "Date_2012/8/30", "required": true},
+    {"type": "boolean", "name": "Date_2012/8/31", "required": true}, {"type": "boolean",
+    "name": "Date_2012/8/6", "required": true}, {"type": "boolean", "name": "Date_2012/8/7",
+    "required": true}, {"type": "boolean", "name": "Date_2012/8/8", "required": true},
+    {"type": "boolean", "name": "Date_2012/8/9", "required": true}, {"type": "boolean",
+    "name": "Date_2012/9/10", "required": true}, {"type": "boolean", "name": "Date_2012/9/11",
+    "required": true}, {"type": "boolean", "name": "Date_2012/9/12", "required": true},
+    {"type": "boolean", "name": "Date_2012/9/13", "required": true}, {"type": "boolean",
+    "name": "Date_2012/9/14", "required": true}, {"type": "boolean", "name": "Date_2012/9/17",
+    "required": true}, {"type": "boolean", "name": "Date_2012/9/18", "required": true},
+    {"type": "boolean", "name": "Date_2012/9/19", "required": true}, {"type": "boolean",
+    "name": "Date_2012/9/2", "required": true}, {"type": "boolean", "name": "Date_2012/9/20",
+    "required": true}, {"type": "boolean", "name": "Date_2012/9/21", "required": true},
+    {"type": "boolean", "name": "Date_2012/9/24", "required": true}, {"type": "boolean",
+    "name": "Date_2012/9/25", "required": true}, {"type": "boolean", "name": "Date_2012/9/26",
+    "required": true}, {"type": "boolean", "name": "Date_2012/9/27", "required": true},
+    {"type": "boolean", "name": "Date_2012/9/28", "required": true}, {"type": "boolean",
+    "name": "Date_2012/9/3", "required": true}, {"type": "boolean", "name": "Date_2012/9/4",
+    "required": true}, {"type": "boolean", "name": "Date_2012/9/5", "required": true},
+    {"type": "boolean", "name": "Date_2012/9/6", "required": true}, {"type": "boolean",
+    "name": "Date_2012/9/7", "required": true}, {"type": "boolean", "name": "Date_2012/9/9",
+    "required": true}, {"type": "boolean", "name": "Date_2013/1/1", "required": true},
+    {"type": "boolean", "name": "Date_2013/1/10", "required": true}, {"type": "boolean",
+    "name": "Date_2013/1/11", "required": true}, {"type": "boolean", "name": "Date_2013/1/13",
+    "required": true}, {"type": "boolean", "name": "Date_2013/1/14", "required": true},
+    {"type": "boolean", "name": "Date_2013/1/15", "required": true}, {"type": "boolean",
+    "name": "Date_2013/1/16", "required": true}, {"type": "boolean", "name": "Date_2013/1/17",
+    "required": true}, {"type": "boolean", "name": "Date_2013/1/18", "required": true},
+    {"type": "boolean", "name": "Date_2013/1/2", "required": true}, {"type": "boolean",
+    "name": "Date_2013/1/21", "required": true}, {"type": "boolean", "name": "Date_2013/1/22",
+    "required": true}, {"type": "boolean", "name": "Date_2013/1/23", "required": true},
+    {"type": "boolean", "name": "Date_2013/1/24", "required": true}, {"type": "boolean",
+    "name": "Date_2013/1/25", "required": true}, {"type": "boolean", "name": "Date_2013/1/28",
+    "required": true}, {"type": "boolean", "name": "Date_2013/1/29", "required": true},
+    {"type": "boolean", "name": "Date_2013/1/3", "required": true}, {"type": "boolean",
+    "name": "Date_2013/1/30", "required": true}, {"type": "boolean", "name": "Date_2013/1/31",
+    "required": true}, {"type": "boolean", "name": "Date_2013/1/4", "required": true},
+    {"type": "boolean", "name": "Date_2013/1/7", "required": true}, {"type": "boolean",
+    "name": "Date_2013/1/8", "required": true}, {"type": "boolean", "name": "Date_2013/1/9",
+    "required": true}, {"type": "boolean", "name": "Date_2013/10/1", "required": true},
+    {"type": "boolean", "name": "Date_2013/10/10", "required": true}, {"type": "boolean",
+    "name": "Date_2013/10/11", "required": true}, {"type": "boolean", "name": "Date_2013/10/13",
+    "required": true}, {"type": "boolean", "name": "Date_2013/10/14", "required":
+    true}, {"type": "boolean", "name": "Date_2013/10/15", "required": true}, {"type":
+    "boolean", "name": "Date_2013/10/16", "required": true}, {"type": "boolean", "name":
+    "Date_2013/10/17", "required": true}, {"type": "boolean", "name": "Date_2013/10/18",
+    "required": true}, {"type": "boolean", "name": "Date_2013/10/2", "required": true},
+    {"type": "boolean", "name": "Date_2013/10/20", "required": true}, {"type": "boolean",
+    "name": "Date_2013/10/21", "required": true}, {"type": "boolean", "name": "Date_2013/10/22",
+    "required": true}, {"type": "boolean", "name": "Date_2013/10/23", "required":
+    true}, {"type": "boolean", "name": "Date_2013/10/24", "required": true}, {"type":
+    "boolean", "name": "Date_2013/10/25", "required": true}, {"type": "boolean", "name":
+    "Date_2013/10/26", "required": true}, {"type": "boolean", "name": "Date_2013/10/28",
+    "required": true}, {"type": "boolean", "name": "Date_2013/10/29", "required":
+    true}, {"type": "boolean", "name": "Date_2013/10/3", "required": true}, {"type":
+    "boolean", "name": "Date_2013/10/30", "required": true}, {"type": "boolean", "name":
+    "Date_2013/10/31", "required": true}, {"type": "boolean", "name": "Date_2013/10/4",
+    "required": true}, {"type": "boolean", "name": "Date_2013/10/7", "required": true},
+    {"type": "boolean", "name": "Date_2013/10/8", "required": true}, {"type": "boolean",
+    "name": "Date_2013/10/9", "required": true}, {"type": "boolean", "name": "Date_2013/11/1",
+    "required": true}, {"type": "boolean", "name": "Date_2013/11/10", "required":
+    true}, {"type": "boolean", "name": "Date_2013/11/11", "required": true}, {"type":
+    "boolean", "name": "Date_2013/11/12", "required": true}, {"type": "boolean", "name":
+    "Date_2013/11/13", "required": true}, {"type": "boolean", "name": "Date_2013/11/14",
+    "required": true}, {"type": "boolean", "name": "Date_2013/11/15", "required":
+    true}, {"type": "boolean", "name": "Date_2013/11/17", "required": true}, {"type":
+    "boolean", "name": "Date_2013/11/18", "required": true}, {"type": "boolean", "name":
+    "Date_2013/11/19", "required": true}, {"type": "boolean", "name": "Date_2013/11/20",
+    "required": true}, {"type": "boolean", "name": "Date_2013/11/21", "required":
+    true}, {"type": "boolean", "name": "Date_2013/11/22", "required": true}, {"type":
+    "boolean", "name": "Date_2013/11/24", "required": true}, {"type": "boolean", "name":
+    "Date_2013/11/25", "required": true}, {"type": "boolean", "name": "Date_2013/11/26",
+    "required": true}, {"type": "boolean", "name": "Date_2013/11/27", "required":
+    true}, {"type": "boolean", "name": "Date_2013/11/28", "required": true}, {"type":
+    "boolean", "name": "Date_2013/11/29", "required": true}, {"type": "boolean", "name":
+    "Date_2013/11/4", "required": true}, {"type": "boolean", "name": "Date_2013/11/5",
+    "required": true}, {"type": "boolean", "name": "Date_2013/11/6", "required": true},
+    {"type": "boolean", "name": "Date_2013/11/7", "required": true}, {"type": "boolean",
+    "name": "Date_2013/11/8", "required": true}, {"type": "boolean", "name": "Date_2013/11/9",
+    "required": true}, {"type": "boolean", "name": "Date_2013/12/10", "required":
+    true}, {"type": "boolean", "name": "Date_2013/12/11", "required": true}, {"type":
+    "boolean", "name": "Date_2013/12/12", "required": true}, {"type": "boolean", "name":
+    "Date_2013/12/13", "required": true}, {"type": "boolean", "name": "Date_2013/12/15",
+    "required": true}, {"type": "boolean", "name": "Date_2013/12/16", "required":
+    true}, {"type": "boolean", "name": "Date_2013/12/17", "required": true}, {"type":
+    "boolean", "name": "Date_2013/12/18", "required": true}, {"type": "boolean", "name":
+    "Date_2013/12/19", "required": true}, {"type": "boolean", "name": "Date_2013/12/2",
+    "required": true}, {"type": "boolean", "name": "Date_2013/12/20", "required":
+    true}, {"type": "boolean", "name": "Date_2013/12/23", "required": true}, {"type":
+    "boolean", "name": "Date_2013/12/24", "required": true}, {"type": "boolean", "name":
+    "Date_2013/12/25", "required": true}, {"type": "boolean", "name": "Date_2013/12/26",
+    "required": true}, {"type": "boolean", "name": "Date_2013/12/27", "required":
+    true}, {"type": "boolean", "name": "Date_2013/12/3", "required": true}, {"type":
+    "boolean", "name": "Date_2013/12/30", "required": true}, {"type": "boolean", "name":
+    "Date_2013/12/31", "required": true}, {"type": "boolean", "name": "Date_2013/12/4",
+    "required": true}, {"type": "boolean", "name": "Date_2013/12/5", "required": true},
+    {"type": "boolean", "name": "Date_2013/12/6", "required": true}, {"type": "boolean",
+    "name": "Date_2013/12/7", "required": true}, {"type": "boolean", "name": "Date_2013/12/9",
+    "required": true}, {"type": "boolean", "name": "Date_2013/2/1", "required": true},
+    {"type": "boolean", "name": "Date_2013/2/12", "required": true}, {"type": "boolean",
+    "name": "Date_2013/2/13", "required": true}, {"type": "boolean", "name": "Date_2013/2/14",
+    "required": true}, {"type": "boolean", "name": "Date_2013/2/15", "required": true},
+    {"type": "boolean", "name": "Date_2013/2/18", "required": true}, {"type": "boolean",
+    "name": "Date_2013/2/19", "required": true}, {"type": "boolean", "name": "Date_2013/2/20",
+    "required": true}, {"type": "boolean", "name": "Date_2013/2/21", "required": true},
+    {"type": "boolean", "name": "Date_2013/2/22", "required": true}, {"type": "boolean",
+    "name": "Date_2013/2/25", "required": true}, {"type": "boolean", "name": "Date_2013/2/26",
+    "required": true}, {"type": "boolean", "name": "Date_2013/2/27", "required": true},
+    {"type": "boolean", "name": "Date_2013/2/28", "required": true}, {"type": "boolean",
+    "name": "Date_2013/2/3", "required": true}, {"type": "boolean", "name": "Date_2013/2/4",
+    "required": true}, {"type": "boolean", "name": "Date_2013/2/5", "required": true},
+    {"type": "boolean", "name": "Date_2013/2/6", "required": true}, {"type": "boolean",
+    "name": "Date_2013/2/7", "required": true}, {"type": "boolean", "name": "Date_2013/2/8",
+    "required": true}, {"type": "boolean", "name": "Date_2013/3/1", "required": true},
+    {"type": "boolean", "name": "Date_2013/3/11", "required": true}, {"type": "boolean",
+    "name": "Date_2013/3/12", "required": true}, {"type": "boolean", "name": "Date_2013/3/13",
+    "required": true}, {"type": "boolean", "name": "Date_2013/3/14", "required": true},
+    {"type": "boolean", "name": "Date_2013/3/15", "required": true}, {"type": "boolean",
+    "name": "Date_2013/3/17", "required": true}, {"type": "boolean", "name": "Date_2013/3/18",
+    "required": true}, {"type": "boolean", "name": "Date_2013/3/19", "required": true},
+    {"type": "boolean", "name": "Date_2013/3/20", "required": true}, {"type": "boolean",
+    "name": "Date_2013/3/21", "required": true}, {"type": "boolean", "name": "Date_2013/3/22",
+    "required": true}, {"type": "boolean", "name": "Date_2013/3/24", "required": true},
+    {"type": "boolean", "name": "Date_2013/3/25", "required": true}, {"type": "boolean",
+    "name": "Date_2013/3/26", "required": true}, {"type": "boolean", "name": "Date_2013/3/27",
+    "required": true}, {"type": "boolean", "name": "Date_2013/3/28", "required": true},
+    {"type": "boolean", "name": "Date_2013/3/29", "required": true}, {"type": "boolean",
+    "name": "Date_2013/3/4", "required": true}, {"type": "boolean", "name": "Date_2013/3/5",
+    "required": true}, {"type": "boolean", "name": "Date_2013/3/6", "required": true},
+    {"type": "boolean", "name": "Date_2013/3/7", "required": true}, {"type": "boolean",
+    "name": "Date_2013/3/8", "required": true}, {"type": "boolean", "name": "Date_2013/4/1",
+    "required": true}, {"type": "boolean", "name": "Date_2013/4/10", "required": true},
+    {"type": "boolean", "name": "Date_2013/4/11", "required": true}, {"type": "boolean",
+    "name": "Date_2013/4/12", "required": true}, {"type": "boolean", "name": "Date_2013/4/15",
+    "required": true}, {"type": "boolean", "name": "Date_2013/4/16", "required": true},
+    {"type": "boolean", "name": "Date_2013/4/17", "required": true}, {"type": "boolean",
+    "name": "Date_2013/4/18", "required": true}, {"type": "boolean", "name": "Date_2013/4/19",
+    "required": true}, {"type": "boolean", "name": "Date_2013/4/2", "required": true},
+    {"type": "boolean", "name": "Date_2013/4/21", "required": true}, {"type": "boolean",
+    "name": "Date_2013/4/22", "required": true}, {"type": "boolean", "name": "Date_2013/4/23",
+    "required": true}, {"type": "boolean", "name": "Date_2013/4/24", "required": true},
+    {"type": "boolean", "name": "Date_2013/4/25", "required": true}, {"type": "boolean",
+    "name": "Date_2013/4/26", "required": true}, {"type": "boolean", "name": "Date_2013/4/27",
+    "required": true}, {"type": "boolean", "name": "Date_2013/4/28", "required": true},
+    {"type": "boolean", "name": "Date_2013/4/3", "required": true}, {"type": "boolean",
+    "name": "Date_2013/4/30", "required": true}, {"type": "boolean", "name": "Date_2013/4/4",
+    "required": true}, {"type": "boolean", "name": "Date_2013/4/5", "required": true},
+    {"type": "boolean", "name": "Date_2013/4/8", "required": true}, {"type": "boolean",
+    "name": "Date_2013/4/9", "required": true}, {"type": "boolean", "name": "Date_2013/5/1",
+    "required": true}, {"type": "boolean", "name": "Date_2013/5/10", "required": true},
+    {"type": "boolean", "name": "Date_2013/5/12", "required": true}, {"type": "boolean",
+    "name": "Date_2013/5/13", "required": true}, {"type": "boolean", "name": "Date_2013/5/14",
+    "required": true}, {"type": "boolean", "name": "Date_2013/5/15", "required": true},
+    {"type": "boolean", "name": "Date_2013/5/16", "required": true}, {"type": "boolean",
+    "name": "Date_2013/5/17", "required": true}, {"type": "boolean", "name": "Date_2013/5/2",
+    "required": true}, {"type": "boolean", "name": "Date_2013/5/20", "required": true},
+    {"type": "boolean", "name": "Date_2013/5/21", "required": true}, {"type": "boolean",
+    "name": "Date_2013/5/22", "required": true}, {"type": "boolean", "name": "Date_2013/5/23",
+    "required": true}, {"type": "boolean", "name": "Date_2013/5/24", "required": true},
+    {"type": "boolean", "name": "Date_2013/5/27", "required": true}, {"type": "boolean",
+    "name": "Date_2013/5/28", "required": true}, {"type": "boolean", "name": "Date_2013/5/29",
+    "required": true}, {"type": "boolean", "name": "Date_2013/5/3", "required": true},
+    {"type": "boolean", "name": "Date_2013/5/30", "required": true}, {"type": "boolean",
+    "name": "Date_2013/5/31", "required": true}, {"type": "boolean", "name": "Date_2013/5/5",
+    "required": true}, {"type": "boolean", "name": "Date_2013/5/6", "required": true},
+    {"type": "boolean", "name": "Date_2013/5/7", "required": true}, {"type": "boolean",
+    "name": "Date_2013/5/8", "required": true}, {"type": "boolean", "name": "Date_2013/5/9",
+    "required": true}, {"type": "boolean", "name": "Date_2013/6/10", "required": true},
+    {"type": "boolean", "name": "Date_2013/6/11", "required": true}, {"type": "boolean",
+    "name": "Date_2013/6/12", "required": true}, {"type": "boolean", "name": "Date_2013/6/13",
+    "required": true}, {"type": "boolean", "name": "Date_2013/6/14", "required": true},
+    {"type": "boolean", "name": "Date_2013/6/17", "required": true}, {"type": "boolean",
+    "name": "Date_2013/6/18", "required": true}, {"type": "boolean", "name": "Date_2013/6/19",
+    "required": true}, {"type": "boolean", "name": "Date_2013/6/20", "required": true},
+    {"type": "boolean", "name": "Date_2013/6/21", "required": true}, {"type": "boolean",
+    "name": "Date_2013/6/23", "required": true}, {"type": "boolean", "name": "Date_2013/6/24",
+    "required": true}, {"type": "boolean", "name": "Date_2013/6/25", "required": true},
+    {"type": "boolean", "name": "Date_2013/6/26", "required": true}, {"type": "boolean",
+    "name": "Date_2013/6/27", "required": true}, {"type": "boolean", "name": "Date_2013/6/28",
+    "required": true}, {"type": "boolean", "name": "Date_2013/6/3", "required": true},
+    {"type": "boolean", "name": "Date_2013/6/4", "required": true}, {"type": "boolean",
+    "name": "Date_2013/6/5", "required": true}, {"type": "boolean", "name": "Date_2013/6/6",
+    "required": true}, {"type": "boolean", "name": "Date_2013/6/7", "required": true},
+    {"type": "boolean", "name": "Date_2013/7/1", "required": true}, {"type": "boolean",
+    "name": "Date_2013/7/10", "required": true}, {"type": "boolean", "name": "Date_2013/7/11",
+    "required": true}, {"type": "boolean", "name": "Date_2013/7/12", "required": true},
+    {"type": "boolean", "name": "Date_2013/7/15", "required": true}, {"type": "boolean",
+    "name": "Date_2013/7/16", "required": true}, {"type": "boolean", "name": "Date_2013/7/17",
+    "required": true}, {"type": "boolean", "name": "Date_2013/7/18", "required": true},
+    {"type": "boolean", "name": "Date_2013/7/19", "required": true}, {"type": "boolean",
+    "name": "Date_2013/7/2", "required": true}, {"type": "boolean", "name": "Date_2013/7/20",
+    "required": true}, {"type": "boolean", "name": "Date_2013/7/22", "required": true},
+    {"type": "boolean", "name": "Date_2013/7/23", "required": true}, {"type": "boolean",
+    "name": "Date_2013/7/24", "required": true}, {"type": "boolean", "name": "Date_2013/7/25",
+    "required": true}, {"type": "boolean", "name": "Date_2013/7/26", "required": true},
+    {"type": "boolean", "name": "Date_2013/7/29", "required": true}, {"type": "boolean",
+    "name": "Date_2013/7/3", "required": true}, {"type": "boolean", "name": "Date_2013/7/30",
+    "required": true}, {"type": "boolean", "name": "Date_2013/7/31", "required": true},
+    {"type": "boolean", "name": "Date_2013/7/4", "required": true}, {"type": "boolean",
+    "name": "Date_2013/7/5", "required": true}, {"type": "boolean", "name": "Date_2013/7/8",
+    "required": true}, {"type": "boolean", "name": "Date_2013/7/9", "required": true},
+    {"type": "boolean", "name": "Date_2013/8/1", "required": true}, {"type": "boolean",
+    "name": "Date_2013/8/11", "required": true}, {"type": "boolean", "name": "Date_2013/8/12",
+    "required": true}, {"type": "boolean", "name": "Date_2013/8/13", "required": true},
+    {"type": "boolean", "name": "Date_2013/8/14", "required": true}, {"type": "boolean",
+    "name": "Date_2013/8/15", "required": true}, {"type": "boolean", "name": "Date_2013/8/16",
+    "required": true}, {"type": "boolean", "name": "Date_2013/8/18", "required": true},
+    {"type": "boolean", "name": "Date_2013/8/19", "required": true}, {"type": "boolean",
+    "name": "Date_2013/8/2", "required": true}, {"type": "boolean", "name": "Date_2013/8/20",
+    "required": true}, {"type": "boolean", "name": "Date_2013/8/21", "required": true},
+    {"type": "boolean", "name": "Date_2013/8/22", "required": true}, {"type": "boolean",
+    "name": "Date_2013/8/23", "required": true}, {"type": "boolean", "name": "Date_2013/8/26",
+    "required": true}, {"type": "boolean", "name": "Date_2013/8/27", "required": true},
+    {"type": "boolean", "name": "Date_2013/8/28", "required": true}, {"type": "boolean",
+    "name": "Date_2013/8/29", "required": true}, {"type": "boolean", "name": "Date_2013/8/30",
+    "required": true}, {"type": "boolean", "name": "Date_2013/8/4", "required": true},
+    {"type": "boolean", "name": "Date_2013/8/5", "required": true}, {"type": "boolean",
+    "name": "Date_2013/8/6", "required": true}, {"type": "boolean", "name": "Date_2013/8/7",
+    "required": true}, {"type": "boolean", "name": "Date_2013/8/8", "required": true},
+    {"type": "boolean", "name": "Date_2013/8/9", "required": true}, {"type": "boolean",
+    "name": "Date_2013/9/10", "required": true}, {"type": "boolean", "name": "Date_2013/9/11",
+    "required": true}, {"type": "boolean", "name": "Date_2013/9/12", "required": true},
+    {"type": "boolean", "name": "Date_2013/9/13", "required": true}, {"type": "boolean",
+    "name": "Date_2013/9/16", "required": true}, {"type": "boolean", "name": "Date_2013/9/17",
+    "required": true}, {"type": "boolean", "name": "Date_2013/9/18", "required": true},
+    {"type": "boolean", "name": "Date_2013/9/19", "required": true}, {"type": "boolean",
+    "name": "Date_2013/9/2", "required": true}, {"type": "boolean", "name": "Date_2013/9/20",
+    "required": true}, {"type": "boolean", "name": "Date_2013/9/22", "required": true},
+    {"type": "boolean", "name": "Date_2013/9/23", "required": true}, {"type": "boolean",
+    "name": "Date_2013/9/24", "required": true}, {"type": "boolean", "name": "Date_2013/9/25",
+    "required": true}, {"type": "boolean", "name": "Date_2013/9/26", "required": true},
+    {"type": "boolean", "name": "Date_2013/9/27", "required": true}, {"type": "boolean",
+    "name": "Date_2013/9/29", "required": true}, {"type": "boolean", "name": "Date_2013/9/3",
+    "required": true}, {"type": "boolean", "name": "Date_2013/9/30", "required": true},
+    {"type": "boolean", "name": "Date_2013/9/4", "required": true}, {"type": "boolean",
+    "name": "Date_2013/9/5", "required": true}, {"type": "boolean", "name": "Date_2013/9/6",
+    "required": true}, {"type": "boolean", "name": "Date_2013/9/8", "required": true},
+    {"type": "boolean", "name": "Date_2013/9/9", "required": true}, {"type": "boolean",
+    "name": "Date_2014/1/10", "required": true}, {"type": "boolean", "name": "Date_2014/1/13",
+    "required": true}, {"type": "boolean", "name": "Date_2014/1/14", "required": true},
+    {"type": "boolean", "name": "Date_2014/1/15", "required": true}, {"type": "boolean",
+    "name": "Date_2014/1/16", "required": true}, {"type": "boolean", "name": "Date_2014/1/17",
+    "required": true}, {"type": "boolean", "name": "Date_2014/1/19", "required": true},
+    {"type": "boolean", "name": "Date_2014/1/2", "required": true}, {"type": "boolean",
+    "name": "Date_2014/1/20", "required": true}, {"type": "boolean", "name": "Date_2014/1/21",
+    "required": true}, {"type": "boolean", "name": "Date_2014/1/22", "required": true},
+    {"type": "boolean", "name": "Date_2014/1/23", "required": true}, {"type": "boolean",
+    "name": "Date_2014/1/24", "required": true}, {"type": "boolean", "name": "Date_2014/1/27",
+    "required": true}, {"type": "boolean", "name": "Date_2014/1/28", "required": true},
+    {"type": "boolean", "name": "Date_2014/1/29", "required": true}, {"type": "boolean",
+    "name": "Date_2014/1/3", "required": true}, {"type": "boolean", "name": "Date_2014/1/30",
+    "required": true}, {"type": "boolean", "name": "Date_2014/1/31", "required": true},
+    {"type": "boolean", "name": "Date_2014/1/6", "required": true}, {"type": "boolean",
+    "name": "Date_2014/1/7", "required": true}, {"type": "boolean", "name": "Date_2014/1/8",
+    "required": true}, {"type": "boolean", "name": "Date_2014/1/9", "required": true},
+    {"type": "boolean", "name": "Date_2014/10/1", "required": true}, {"type": "boolean",
+    "name": "Date_2014/10/10", "required": true}, {"type": "boolean", "name": "Date_2014/10/13",
+    "required": true}, {"type": "boolean", "name": "Date_2014/10/14", "required":
+    true}, {"type": "boolean", "name": "Date_2014/10/15", "required": true}, {"type":
+    "boolean", "name": "Date_2014/10/16", "required": true}, {"type": "boolean", "name":
+    "Date_2014/10/17", "required": true}, {"type": "boolean", "name": "Date_2014/10/2",
+    "required": true}, {"type": "boolean", "name": "Date_2014/10/20", "required":
+    true}, {"type": "boolean", "name": "Date_2014/10/21", "required": true}, {"type":
+    "boolean", "name": "Date_2014/10/22", "required": true}, {"type": "boolean", "name":
+    "Date_2014/10/23", "required": true}, {"type": "boolean", "name": "Date_2014/10/24",
+    "required": true}, {"type": "boolean", "name": "Date_2014/10/27", "required":
+    true}, {"type": "boolean", "name": "Date_2014/10/28", "required": true}, {"type":
+    "boolean", "name": "Date_2014/10/29", "required": true}, {"type": "boolean", "name":
+    "Date_2014/10/3", "required": true}, {"type": "boolean", "name": "Date_2014/10/30",
+    "required": true}, {"type": "boolean", "name": "Date_2014/10/31", "required":
+    true}, {"type": "boolean", "name": "Date_2014/10/6", "required": true}, {"type":
+    "boolean", "name": "Date_2014/10/7", "required": true}, {"type": "boolean", "name":
+    "Date_2014/10/8", "required": true}, {"type": "boolean", "name": "Date_2014/10/9",
+    "required": true}, {"type": "boolean", "name": "Date_2014/11/10", "required":
+    true}, {"type": "boolean", "name": "Date_2014/11/11", "required": true}, {"type":
+    "boolean", "name": "Date_2014/11/12", "required": true}, {"type": "boolean", "name":
+    "Date_2014/11/13", "required": true}, {"type": "boolean", "name": "Date_2014/11/14",
+    "required": true}, {"type": "boolean", "name": "Date_2014/11/17", "required":
+    true}, {"type": "boolean", "name": "Date_2014/11/18", "required": true}, {"type":
+    "boolean", "name": "Date_2014/11/19", "required": true}, {"type": "boolean", "name":
+    "Date_2014/11/20", "required": true}, {"type": "boolean", "name": "Date_2014/11/21",
+    "required": true}, {"type": "boolean", "name": "Date_2014/11/25", "required":
+    true}, {"type": "boolean", "name": "Date_2014/11/26", "required": true}, {"type":
+    "boolean", "name": "Date_2014/11/27", "required": true}, {"type": "boolean", "name":
+    "Date_2014/11/28", "required": true}, {"type": "boolean", "name": "Date_2014/11/3",
+    "required": true}, {"type": "boolean", "name": "Date_2014/11/4", "required": true},
+    {"type": "boolean", "name": "Date_2014/11/5", "required": true}, {"type": "boolean",
+    "name": "Date_2014/11/6", "required": true}, {"type": "boolean", "name": "Date_2014/11/7",
+    "required": true}, {"type": "boolean", "name": "Date_2014/12/1", "required": true},
+    {"type": "boolean", "name": "Date_2014/12/10", "required": true}, {"type": "boolean",
+    "name": "Date_2014/12/11", "required": true}, {"type": "boolean", "name": "Date_2014/12/12",
+    "required": true}, {"type": "boolean", "name": "Date_2014/12/15", "required":
+    true}, {"type": "boolean", "name": "Date_2014/12/16", "required": true}, {"type":
+    "boolean", "name": "Date_2014/12/17", "required": true}, {"type": "boolean", "name":
+    "Date_2014/12/18", "required": true}, {"type": "boolean", "name": "Date_2014/12/19",
+    "required": true}, {"type": "boolean", "name": "Date_2014/12/2", "required": true},
+    {"type": "boolean", "name": "Date_2014/12/22", "required": true}, {"type": "boolean",
+    "name": "Date_2014/12/23", "required": true}, {"type": "boolean", "name": "Date_2014/12/24",
+    "required": true}, {"type": "boolean", "name": "Date_2014/12/25", "required":
+    true}, {"type": "boolean", "name": "Date_2014/12/26", "required": true}, {"type":
+    "boolean", "name": "Date_2014/12/3", "required": true}, {"type": "boolean", "name":
+    "Date_2014/12/30", "required": true}, {"type": "boolean", "name": "Date_2014/12/4",
+    "required": true}, {"type": "boolean", "name": "Date_2014/12/5", "required": true},
+    {"type": "boolean", "name": "Date_2014/12/8", "required": true}, {"type": "boolean",
+    "name": "Date_2014/12/9", "required": true}, {"type": "boolean", "name": "Date_2014/2/10",
+    "required": true}, {"type": "boolean", "name": "Date_2014/2/11", "required": true},
+    {"type": "boolean", "name": "Date_2014/2/12", "required": true}, {"type": "boolean",
+    "name": "Date_2014/2/13", "required": true}, {"type": "boolean", "name": "Date_2014/2/14",
+    "required": true}, {"type": "boolean", "name": "Date_2014/2/17", "required": true},
+    {"type": "boolean", "name": "Date_2014/2/18", "required": true}, {"type": "boolean",
+    "name": "Date_2014/2/19", "required": true}, {"type": "boolean", "name": "Date_2014/2/20",
+    "required": true}, {"type": "boolean", "name": "Date_2014/2/21", "required": true},
+    {"type": "boolean", "name": "Date_2014/2/24", "required": true}, {"type": "boolean",
+    "name": "Date_2014/2/25", "required": true}, {"type": "boolean", "name": "Date_2014/2/26",
+    "required": true}, {"type": "boolean", "name": "Date_2014/2/27", "required": true},
+    {"type": "boolean", "name": "Date_2014/2/28", "required": true}, {"type": "boolean",
+    "name": "Date_2014/2/3", "required": true}, {"type": "boolean", "name": "Date_2014/2/4",
+    "required": true}, {"type": "boolean", "name": "Date_2014/2/5", "required": true},
+    {"type": "boolean", "name": "Date_2014/2/6", "required": true}, {"type": "boolean",
+    "name": "Date_2014/3/10", "required": true}, {"type": "boolean", "name": "Date_2014/3/11",
+    "required": true}, {"type": "boolean", "name": "Date_2014/3/12", "required": true},
+    {"type": "boolean", "name": "Date_2014/3/13", "required": true}, {"type": "boolean",
+    "name": "Date_2014/3/14", "required": true}, {"type": "boolean", "name": "Date_2014/3/16",
+    "required": true}, {"type": "boolean", "name": "Date_2014/3/17", "required": true},
+    {"type": "boolean", "name": "Date_2014/3/18", "required": true}, {"type": "boolean",
+    "name": "Date_2014/3/19", "required": true}, {"type": "boolean", "name": "Date_2014/3/2",
+    "required": true}, {"type": "boolean", "name": "Date_2014/3/20", "required": true},
+    {"type": "boolean", "name": "Date_2014/3/21", "required": true}, {"type": "boolean",
+    "name": "Date_2014/3/24", "required": true}, {"type": "boolean", "name": "Date_2014/3/25",
+    "required": true}, {"type": "boolean", "name": "Date_2014/3/26", "required": true},
+    {"type": "boolean", "name": "Date_2014/3/27", "required": true}, {"type": "boolean",
+    "name": "Date_2014/3/28", "required": true}, {"type": "boolean", "name": "Date_2014/3/3",
+    "required": true}, {"type": "boolean", "name": "Date_2014/3/31", "required": true},
+    {"type": "boolean", "name": "Date_2014/3/4", "required": true}, {"type": "boolean",
+    "name": "Date_2014/3/5", "required": true}, {"type": "boolean", "name": "Date_2014/3/6",
+    "required": true}, {"type": "boolean", "name": "Date_2014/3/7", "required": true},
+    {"type": "boolean", "name": "Date_2014/4/1", "required": true}, {"type": "boolean",
+    "name": "Date_2014/4/10", "required": true}, {"type": "boolean", "name": "Date_2014/4/11",
+    "required": true}, {"type": "boolean", "name": "Date_2014/4/14", "required": true},
+    {"type": "boolean", "name": "Date_2014/4/15", "required": true}, {"type": "boolean",
+    "name": "Date_2014/4/16", "required": true}, {"type": "boolean", "name": "Date_2014/4/17",
+    "required": true}, {"type": "boolean", "name": "Date_2014/4/18", "required": true},
+    {"type": "boolean", "name": "Date_2014/4/2", "required": true}, {"type": "boolean",
+    "name": "Date_2014/4/20", "required": true}, {"type": "boolean", "name": "Date_2014/4/21",
+    "required": true}, {"type": "boolean", "name": "Date_2014/4/22", "required": true},
+    {"type": "boolean", "name": "Date_2014/4/23", "required": true}, {"type": "boolean",
+    "name": "Date_2014/4/24", "required": true}, {"type": "boolean", "name": "Date_2014/4/25",
+    "required": true}, {"type": "boolean", "name": "Date_2014/4/28", "required": true},
+    {"type": "boolean", "name": "Date_2014/4/29", "required": true}, {"type": "boolean",
+    "name": "Date_2014/4/3", "required": true}, {"type": "boolean", "name": "Date_2014/4/30",
+    "required": true}, {"type": "boolean", "name": "Date_2014/4/4", "required": true},
+    {"type": "boolean", "name": "Date_2014/4/7", "required": true}, {"type": "boolean",
+    "name": "Date_2014/4/8", "required": true}, {"type": "boolean", "name": "Date_2014/4/9",
+    "required": true}, {"type": "boolean", "name": "Date_2014/5/1", "required": true},
+    {"type": "boolean", "name": "Date_2014/5/12", "required": true}, {"type": "boolean",
+    "name": "Date_2014/5/13", "required": true}, {"type": "boolean", "name": "Date_2014/5/14",
+    "required": true}, {"type": "boolean", "name": "Date_2014/5/15", "required": true},
+    {"type": "boolean", "name": "Date_2014/5/16", "required": true}, {"type": "boolean",
+    "name": "Date_2014/5/19", "required": true}, {"type": "boolean", "name": "Date_2014/5/2",
+    "required": true}, {"type": "boolean", "name": "Date_2014/5/20", "required": true},
+    {"type": "boolean", "name": "Date_2014/5/21", "required": true}, {"type": "boolean",
+    "name": "Date_2014/5/22", "required": true}, {"type": "boolean", "name": "Date_2014/5/23",
+    "required": true}, {"type": "boolean", "name": "Date_2014/5/26", "required": true},
+    {"type": "boolean", "name": "Date_2014/5/27", "required": true}, {"type": "boolean",
+    "name": "Date_2014/5/28", "required": true}, {"type": "boolean", "name": "Date_2014/5/29",
+    "required": true}, {"type": "boolean", "name": "Date_2014/5/30", "required": true},
+    {"type": "boolean", "name": "Date_2014/5/5", "required": true}, {"type": "boolean",
+    "name": "Date_2014/5/7", "required": true}, {"type": "boolean", "name": "Date_2014/5/8",
+    "required": true}, {"type": "boolean", "name": "Date_2014/5/9", "required": true},
+    {"type": "boolean", "name": "Date_2014/6/10", "required": true}, {"type": "boolean",
+    "name": "Date_2014/6/11", "required": true}, {"type": "boolean", "name": "Date_2014/6/12",
+    "required": true}, {"type": "boolean", "name": "Date_2014/6/13", "required": true},
+    {"type": "boolean", "name": "Date_2014/6/16", "required": true}, {"type": "boolean",
+    "name": "Date_2014/6/17", "required": true}, {"type": "boolean", "name": "Date_2014/6/18",
+    "required": true}, {"type": "boolean", "name": "Date_2014/6/19", "required": true},
+    {"type": "boolean", "name": "Date_2014/6/2", "required": true}, {"type": "boolean",
+    "name": "Date_2014/6/20", "required": true}, {"type": "boolean", "name": "Date_2014/6/23",
+    "required": true}, {"type": "boolean", "name": "Date_2014/6/24", "required": true},
+    {"type": "boolean", "name": "Date_2014/6/25", "required": true}, {"type": "boolean",
+    "name": "Date_2014/6/26", "required": true}, {"type": "boolean", "name": "Date_2014/6/27",
+    "required": true}, {"type": "boolean", "name": "Date_2014/6/29", "required": true},
+    {"type": "boolean", "name": "Date_2014/6/3", "required": true}, {"type": "boolean",
+    "name": "Date_2014/6/30", "required": true}, {"type": "boolean", "name": "Date_2014/6/4",
+    "required": true}, {"type": "boolean", "name": "Date_2014/6/5", "required": true},
+    {"type": "boolean", "name": "Date_2014/6/6", "required": true}, {"type": "boolean",
+    "name": "Date_2014/6/9", "required": true}, {"type": "boolean", "name": "Date_2014/7/1",
+    "required": true}, {"type": "boolean", "name": "Date_2014/7/10", "required": true},
+    {"type": "boolean", "name": "Date_2014/7/11", "required": true}, {"type": "boolean",
+    "name": "Date_2014/7/14", "required": true}, {"type": "boolean", "name": "Date_2014/7/15",
+    "required": true}, {"type": "boolean", "name": "Date_2014/7/16", "required": true},
+    {"type": "boolean", "name": "Date_2014/7/17", "required": true}, {"type": "boolean",
+    "name": "Date_2014/7/18", "required": true}, {"type": "boolean", "name": "Date_2014/7/2",
+    "required": true}, {"type": "boolean", "name": "Date_2014/7/21", "required": true},
+    {"type": "boolean", "name": "Date_2014/7/22", "required": true}, {"type": "boolean",
+    "name": "Date_2014/7/23", "required": true}, {"type": "boolean", "name": "Date_2014/7/24",
+    "required": true}, {"type": "boolean", "name": "Date_2014/7/25", "required": true},
+    {"type": "boolean", "name": "Date_2014/7/28", "required": true}, {"type": "boolean",
+    "name": "Date_2014/7/29", "required": true}, {"type": "boolean", "name": "Date_2014/7/3",
+    "required": true}, {"type": "boolean", "name": "Date_2014/7/30", "required": true},
+    {"type": "boolean", "name": "Date_2014/7/31", "required": true}, {"type": "boolean",
+    "name": "Date_2014/7/4", "required": true}, {"type": "boolean", "name": "Date_2014/7/7",
+    "required": true}, {"type": "boolean", "name": "Date_2014/7/8", "required": true},
+    {"type": "boolean", "name": "Date_2014/7/9", "required": true}, {"type": "boolean",
+    "name": "Date_2014/8/1", "required": true}, {"type": "boolean", "name": "Date_2014/8/11",
+    "required": true}, {"type": "boolean", "name": "Date_2014/8/12", "required": true},
+    {"type": "boolean", "name": "Date_2014/8/13", "required": true}, {"type": "boolean",
+    "name": "Date_2014/8/14", "required": true}, {"type": "boolean", "name": "Date_2014/8/15",
+    "required": true}, {"type": "boolean", "name": "Date_2014/8/18", "required": true},
+    {"type": "boolean", "name": "Date_2014/8/19", "required": true}, {"type": "boolean",
+    "name": "Date_2014/8/20", "required": true}, {"type": "boolean", "name": "Date_2014/8/21",
+    "required": true}, {"type": "boolean", "name": "Date_2014/8/22", "required": true},
+    {"type": "boolean", "name": "Date_2014/8/25", "required": true}, {"type": "boolean",
+    "name": "Date_2014/8/26", "required": true}, {"type": "boolean", "name": "Date_2014/8/27",
+    "required": true}, {"type": "boolean", "name": "Date_2014/8/28", "required": true},
+    {"type": "boolean", "name": "Date_2014/8/29", "required": true}, {"type": "boolean",
+    "name": "Date_2014/8/4", "required": true}, {"type": "boolean", "name": "Date_2014/8/5",
+    "required": true}, {"type": "boolean", "name": "Date_2014/8/6", "required": true},
+    {"type": "boolean", "name": "Date_2014/8/7", "required": true}, {"type": "boolean",
+    "name": "Date_2014/8/8", "required": true}, {"type": "boolean", "name": "Date_2014/9/1",
+    "required": true}, {"type": "boolean", "name": "Date_2014/9/10", "required": true},
+    {"type": "boolean", "name": "Date_2014/9/11", "required": true}, {"type": "boolean",
+    "name": "Date_2014/9/12", "required": true}, {"type": "boolean", "name": "Date_2014/9/15",
+    "required": true}, {"type": "boolean", "name": "Date_2014/9/16", "required": true},
+    {"type": "boolean", "name": "Date_2014/9/17", "required": true}, {"type": "boolean",
+    "name": "Date_2014/9/18", "required": true}, {"type": "boolean", "name": "Date_2014/9/19",
+    "required": true}, {"type": "boolean", "name": "Date_2014/9/2", "required": true},
+    {"type": "boolean", "name": "Date_2014/9/22", "required": true}, {"type": "boolean",
+    "name": "Date_2014/9/23", "required": true}, {"type": "boolean", "name": "Date_2014/9/24",
+    "required": true}, {"type": "boolean", "name": "Date_2014/9/25", "required": true},
+    {"type": "boolean", "name": "Date_2014/9/26", "required": true}, {"type": "boolean",
+    "name": "Date_2014/9/29", "required": true}, {"type": "boolean", "name": "Date_2014/9/3",
+    "required": true}, {"type": "boolean", "name": "Date_2014/9/30", "required": true},
+    {"type": "boolean", "name": "Date_2014/9/4", "required": true}, {"type": "boolean",
+    "name": "Date_2014/9/5", "required": true}, {"type": "boolean", "name": "Date_2014/9/8",
+    "required": true}, {"type": "boolean", "name": "Date_2014/9/9", "required": true},
+    {"type": "boolean", "name": "Date_2015/1/1", "required": true}, {"type": "boolean",
+    "name": "Date_2015/1/5", "required": true}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-10-26 16:23:00.981694'

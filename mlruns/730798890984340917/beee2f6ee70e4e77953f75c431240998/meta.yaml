@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/USUARIO/Documents/GitHub/MLOps_Taller_4/mlruns/730798890984340917/beee2f6ee70e4e77953f75c431240998/artifacts
+end_time: 1761495434422
+entry_point_name: ''
+experiment_id: '730798890984340917'
+lifecycle_stage: active
+run_id: beee2f6ee70e4e77953f75c431240998
+run_name: suave-fowl-563
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761495420032
+status: 3
+tags: []
+user_id: USUARIO
