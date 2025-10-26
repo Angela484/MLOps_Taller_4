@@ -26,8 +26,8 @@ data.dropna(inplace=True)
 data["Order_Demand"] = (
     data["Order_Demand"]
     .astype(str)
-    .str.replace('(', '-', regex=True)
-    .str.replace(')', '', regex=True)
+    .str.replace("(", "-", regex=False)
+    .str.replace(")", "", regex=False)
     .astype(float)
 )
 
