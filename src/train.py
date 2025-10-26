@@ -67,17 +67,17 @@ r2 = r2_score(y_test, y_pred)
 print(f"--- Debug: MSE={mse:.4f}, R2={r2:.4f} ---")
 
 # ==========================
-# 💾 Guardar modelo
+# 💾 Guardar modelo (compatible con Windows y Linux)
 # ==========================
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 model_path = os.path.join(project_root, "model.pkl")
 joblib.dump(model, model_path)
-
 print(f"--- Debug: Modelo guardado en {model_path} ---")
 
 # ==========================
 # 🧠 Registrar en MLflow
 # ==========================
+mlflow.set_tracking_uri("file://" + os.path.join(project_root, "mlruns"))
 mlflow.set_experiment("MLOps_Historical_Demand")
 
 with mlflow.start_run():
