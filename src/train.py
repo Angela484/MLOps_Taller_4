@@ -16,6 +16,10 @@ data_path = os.path.join(os.path.dirname(__file__), '..', 'Historical Product De
 data = pd.read_csv(data_path)
 print(f"--- Debug: Dataset cargado con {data.shape[0]} filas y {data.shape[1]} columnas ---")
 
+data = data.sample(n=10000, random_state=42)
+print(f"--- Debug: Usando muestra de {data.shape[0]} filas ---")
+
+
 # ==========================
 # 🧹 Limpieza avanzada
 # ==========================

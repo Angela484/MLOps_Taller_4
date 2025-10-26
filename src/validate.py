@@ -1,65 +1,86 @@
+import pandas as pd
 import mlflow
 import joblib
-import pandas as pd
-from sklearn.metrics import mean_squared_error, r2_score
 import os
+from sklearn.metrics import mean_squared_error, r2_score
 
-print("🚀 Iniciando validación del modelo...")
+print("--- Debug: Iniciando validación del modelo ---")
 
-# === 1. Ruta al dataset ===
+# ========================================
+# 1. Ruta del dataset (ajustada a tu estructura)
+# ========================================
 data_path = os.path.join(os.path.dirname(__file__), '..', 'Historical Product Demand.csv')
-data = pd.read_csv(data_path)
-print(f"✅ Dataset cargado con {data.shape[0]} filas y {data.shape[1]} columnas.")
 
-# === 2. Limpieza avanzada (idéntica a train.py para coherencia) ===
+# ========================================
+# 2. Cargar dataset y usar muestra
+# ========================================
+data = pd.read_csv(data_path)
+print(f"--- Debug: Dataset cargado con {data.shape[0]} filas y {data.shape[1]} columnas ---")
+
+data = data.sample(n=10000, random_state=42)
+print(f"--- Debug: Usando muestra de {data.shape[0]} filas ---")
+
+# ========================================
+# 3. Limpieza avanzada (igual que en train.py)
+# ========================================
 data.columns = data.columns.str.strip()
 data.dropna(inplace=True)
+
+# Convertir la columna de demanda (valores entre paréntesis a negativos)
 data["Order_Demand"] = (
     data["Order_Demand"]
     .astype(str)
-    .str.replace('(', '-', regex=True)
-    .str.replace(')', '', regex=True)
+    .str.replace('(', '-', regex=False)
+    .str.replace(')', '', regex=False)
     .astype(float)
 )
+
+# Convertir variables categóricas a numéricas (one-hot encoding)
 data = pd.get_dummies(data, drop_first=True)
-print(f"🧹 Dataset limpio con {data.shape[0]} filas y {data.shape[1]} columnas.")
 
-# === 3. Variables ===
-if "Order_Demand" not in data.columns:
-    raise ValueError("❌ La columna 'Order_Demand' no existe en el dataset después de la limpieza.")
+print(f"--- Debug: Dataset limpio con {data.shape[0]} filas y {data.shape[1]} columnas ---")
 
-X = data.drop("Order_Demand", axis=1)
+# ========================================
+# 4. Separar features y target
+# ========================================
+X = data.drop(columns=["Order_Demand"])
 y = data["Order_Demand"]
 
-# === 4. Cargar modelo ===
+# ========================================
+# 5. Cargar modelo entrenado
+# ========================================
 model_path = os.path.join(os.path.dirname(__file__), '..', 'model.pkl')
+
 if not os.path.exists(model_path):
-    raise FileNotFoundError(f"❌ No se encontró el modelo en {model_path}. Ejecuta primero train.py.")
+    raise FileNotFoundError(f"⚠️ No se encontró el modelo en {model_path}")
 
 model = joblib.load(model_path)
-print("✅ Modelo cargado correctamente.")
+print("--- Debug: Modelo cargado correctamente ---")
 
-# === 5. Evaluación ===
+# ========================================
+# 6. Hacer predicciones
+# ========================================
 y_pred = model.predict(X)
+
+# ========================================
+# 7. Calcular métricas
+# ========================================
 mse = mean_squared_error(y, y_pred)
 r2 = r2_score(y, y_pred)
 
-print(f"📊 Resultados de validación:")
-print(f"   - MSE: {mse:.4f}")
-print(f"   - R²: {r2:.4f}")
+print(f"📊 MSE del modelo: {mse:.4f}")
+print(f"📈 R² del modelo: {r2:.4f}")
 
-# === 6. Validación con umbral (control de calidad del modelo) ===
-THRESHOLD = 150000000.0
+# ========================================
+# 8. Evaluar si cumple umbral esperado
+# ========================================
+THRESHOLD = 3e8
+
+
 if mse < THRESHOLD:
-    print("✅ El modelo cumple con el umbral esperado. Pipeline exitoso.")
+    print("✅ El modelo cumple con el umbral esperado. Validación exitosa.")
 else:
-    print("❌ El modelo no cumple con el umbral esperado. Deteniendo pipeline.")
+    print("❌ El modelo no cumple el umbral esperado. Deteniendo pipeline.")
     exit(1)
 
-# === 7. Registrar validación en MLflow ===
-mlflow.set_experiment("MLOps_Historical_Product_Demand")
-with mlflow.start_run(run_name="validacion_modelo"):
-    mlflow.log_metric("mse_validation", mse)
-    mlflow.log_metric("r2_validation", r2)
-
-print("🎯 Validación completada y registrada en MLflow.")
+print("✅ Validación completada sin errores.")

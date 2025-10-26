@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/USUARIO/Documents/GitHub/MLOps_Taller_4/mlruns/730798890984340917/a041ef54c903447d80ee6bf47c936db4/artifacts
+end_time: 1761493169851
+entry_point_name: ''
+experiment_id: '730798890984340917'
+lifecycle_stage: active
+run_id: a041ef54c903447d80ee6bf47c936db4
+run_name: handsome-bee-771
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761493153313
+status: 3
+tags: []
+user_id: USUARIO
