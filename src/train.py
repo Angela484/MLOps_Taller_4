@@ -69,7 +69,8 @@ print(f"--- Debug: MSE={mse:.4f}, R2={r2:.4f} ---")
 # ==========================
 # 💾 Guardar modelo
 # ==========================
-model_path = os.path.join(os.getcwd(), "model.pkl")
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+model_path = os.path.join(project_root, "model.pkl")
 joblib.dump(model, model_path)
 
 print(f"--- Debug: Modelo guardado en {model_path} ---")
