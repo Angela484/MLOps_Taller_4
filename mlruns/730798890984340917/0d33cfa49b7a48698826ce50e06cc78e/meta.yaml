@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/USUARIO/Documents/GitHub/MLOps_Taller_4/mlruns/730798890984340917/0d33cfa49b7a48698826ce50e06cc78e/artifacts
+end_time: 1761496301176
+entry_point_name: ''
+experiment_id: '730798890984340917'
+lifecycle_stage: active
+run_id: 0d33cfa49b7a48698826ce50e06cc78e
+run_name: dapper-hare-754
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761496286724
+status: 3
+tags: []
+user_id: USUARIO

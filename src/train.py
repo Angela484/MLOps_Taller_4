@@ -69,8 +69,10 @@ print(f"--- Debug: MSE={mse:.4f}, R2={r2:.4f} ---")
 # ==========================
 # 💾 Guardar modelo
 # ==========================
-model_path = os.path.join(os.path.dirname(__file__), '..', 'model.pkl')
+model_path = os.path.join(os.getcwd(), "model.pkl")
 joblib.dump(model, model_path)
+
+print(f"--- Debug: Modelo guardado en {model_path} ---")
 
 # ==========================
 # 🧠 Registrar en MLflow
@@ -89,4 +91,3 @@ with mlflow.start_run():
     mlflow.sklearn.log_model(model, name="model", input_example=input_example)
 
 print("--- ✅ Entrenamiento completado y modelo guardado exitosamente ---")
-
